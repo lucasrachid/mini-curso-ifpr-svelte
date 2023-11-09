@@ -1,18 +1,8 @@
 <script lang="ts">
-    const nome = "Rachid";
-    let contador = 0;
-
-    let soma = () => {
-        contador += contador;
-    }
-
-    let subtracao = () => {
-        contador -= contador;
-    }
-
+    let contador  = 0;
 </script>
 
-<h1>Olá {nome}</h1>
-<h2>{contador}</h2>
-<button on:click={() => contador++}>Aumentar</button>
-<button on:click={() => contador --}>Diminuir</button>
+<h1>{contador}</h1>
+<input type="text">
+<button on:click={()=> contador++}>Aumentar</button>
+<button on:click={()=> contador--}>Diminuir</button>
